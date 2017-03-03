@@ -1,15 +1,21 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
 import { browserHistory } from 'react-router';
 
 import routes from './routes';
 import Root from './components/Root';
 
-$(function() {
+let reactAppRender = (element) => {
   ReactDOM.render(
     <Root browserHistory={browserHistory} routes={routes} />,
-    document.getElementById('app')
+    element
   );
+};
+
+$(function() {
+  let reactApp = document.getElementById('app');
+  if (reactApp) {
+    reactAppRender(reactApp);
+  }
 });
