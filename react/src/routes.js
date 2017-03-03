@@ -5,8 +5,7 @@ import Home from './components/Home';
 import Boothbay from './components/Boothbay';
 
 let routes = (
-  <Route path="/" component={Layout}>
-    <IndexRoute component={Home} />
+  <Route path="/" component={Home}>
     <Route path="Boothbay" component={Boothbay} />
   </Route>
 );

@@ -1,0 +1,171 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-size: 20px !important;
+}
+
+.navbar {
+    border: none !important;
+    background: rgba(0,0,0,0) !important;
+}
+
+.topbar {
+    height: 50px;
+    width: 100%;
+    z-index: 100;
+    background-color: #146666;
+    position: fixed;
+}
+
+.navhidden {
+    margin-bottom: 0px !important;
+    position: absolute;
+}
+
+.navhidden .navbar-right {
+    margin-right: 0px;
+}
+
+.navvisible {
+    background-color: transparent !important;
+    margin-bottom: 0px !important;
+    border-bottom: none;
+}
+
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+
+    background-color: lightgrey !important;
+}
+
+.form-inline {
+    margin-top: 8px;
+}
+
+@media (min-width: 993px) {
+    .navbar {
+        border-radius: 0px !important;
+    }
+}
+
+.jumbotron {
+    background: url(/assets/colorado.JPG) 50% 0 no-repeat fixed;
+    color: lightgrey !important;
+    background-color: transparent !important;
+    width: 100%;
+    height: 100vh;
+    //margin-top: -52px;
+    margin-bottom: 0 !important;
+}
+
+.jumbotron h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 500%;
+}
+
+.title {
+    border:5px double;
+    border-radius: 10px;
+    padding-top: 50px;
+    max-width: 600px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+#jumbobg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-filter: blur(px);
+}
+
+.forestdiv {
+    background-color: #146666;
+}
+.forest {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    top: -100px;
+
+}
+
+.spacer {
+    height: 20%;
+    width: 100%;
+}
+
+.spacerglyph {
+    height: 25%;
+    width: 100%;
+}
+
+.glyphicon-chevron-down {
+    font-size: 35px;
+    color: white;
+}
+/*.glyphicon-chevron-down:hover {
+
+    font-size: 35px;
+}*/
+
+#content1,
+#content2 {
+    height: auto;
+    background-color: #146666;
+}
+
+.center {
+    text-align: center;
+}
+
+#firstsec {
+    width: 100%;
+    height: auto;
+    background-color: #146666;
+}
+
+#secsec {
+    background: url(/assets/cabin.jpg) 50% 0 no-repeat fixed;
+    height: auto;
+    background-color: #6DABD2;
+}
+
+.input-group {
+    max-width: 300px;
+    margin: auto;
+}
+
+#submit {
+    margin-top: 5px;
+}
+
+#appstoreicon {
+    width: 120px;
+}
+
+#content2 {
+    background-color: white;
+}
+
+#map-canvas {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 400px;
+    align-content: center;
+    border-radius: 5px;
+}
+
+#location {
+    padding: 110px;
+    margin: 30px;
+}
