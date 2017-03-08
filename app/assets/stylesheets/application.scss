@@ -70,9 +70,9 @@ body {
 .title {
     border:5px double;
     border-radius: 10px;
-    padding-top: 50px;
+    padding: 50px;
     max-width: 600px;
-    height: 250px;
+    height: auto;
     margin: 0 auto;
 }
 
@@ -100,7 +100,7 @@ body {
 }
 
 .spacer {
-    height: 20%;
+    height: 10%;
     width: 100%;
 }
 
@@ -136,10 +136,14 @@ body {
 
 #secsec {
     background: url(/assets/cabin.jpg) 50% 0 no-repeat fixed;
-    height: auto;
+    margin-top:20px;
+    height: 100vh;
+    background-size: auto 100%;
     background-color: #6DABD2;
 }
-
+iframe {
+  max-width: 500px;
+}
 .input-group {
     max-width: 300px;
     margin: auto;
