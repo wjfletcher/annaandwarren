@@ -65,7 +65,6 @@ class Home extends Component {
         </div>
         <div id="secsec">
           <div className="container">
-            <div id="map-canvas" className="col-md-6"></div>
             <div className="col-md-4 hidden-xs center" id="location">
 
                 <h2>The Venue</h2>
