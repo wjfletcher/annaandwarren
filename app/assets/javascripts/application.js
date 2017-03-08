@@ -46,7 +46,7 @@ $(document).ready(function () {
 });
 
 //navbar transparent to filled on scroll
-let animatedScroll = false
+var animatedScroll = false;
 
 $(document).scroll(function () {
     if($(window).scrollTop() > 10 && !animatedScroll){
@@ -58,8 +58,8 @@ $(document).scroll(function () {
     else if ($(window).scrollTop() < 10 && animatedScroll){
 
       animatedScroll = false;
-      
+
       $(".topbar").stop().animate({opacity: "0"}, 400);
-    };
+    }
 
 });
