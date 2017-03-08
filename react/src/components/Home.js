@@ -46,7 +46,6 @@ class Home extends Component {
       </div>
 
       <div className="jumbotron center" id="jumbotron">
-          <div className="spacer"></div>
           <div className="title">
             <h1>Anna and Warren</h1>
             <p>are getting married!</p>
