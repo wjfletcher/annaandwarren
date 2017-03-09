@@ -5,12 +5,19 @@ html {
 body {
     height: 100%;
     font-family: 'Josefin Sans', sans-serif !important;
-    font-size: 20px !important;
 }
 
 .navbar {
     border: none !important;
     background: rgba(0,0,0,0) !important;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  background-color: white;
+}
+
+.navbar-nav {
+  margin: 0px -15px !important;
 }
 
 .topbar {
