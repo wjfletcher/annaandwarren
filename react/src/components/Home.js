@@ -59,7 +59,7 @@ class Home extends Component {
         <div id="firstsec">
           <div className="container">
             <div className="center">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNCaEm7s8yShV_KnLP0JmRwA_Ddmk3w_0GGdGgUFSysR0yrw/viewform?embedded=true" width="100%" height="830" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfNCaEm7s8yShV_KnLP0JmRwA_Ddmk3w_0GGdGgUFSysR0yrw/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </div>
           </div>
         </div>
@@ -75,12 +75,11 @@ class Home extends Component {
         </div>
       </div>
       <div id="content2">
-        <div className="container center">
-          <div className="col-md-6">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8NHUe0vxBliSKU7znHt7AVQUVuRfYDodfmB4Ju_dNjg0kyg/viewform?embedded=true" width="100%" height="800px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-          </div>
-          <div className="col-md-6">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScx12urkxZGnUCIUL_vtbTJTAynUlsYQNf3OcGVDxqFr-zdNg/viewform?embedded=true" width="100%" height="800px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        <div id="firstsec">
+          <div className="container center">
+            <div className="col-md-12">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8NHUe0vxBliSKU7znHt7AVQUVuRfYDodfmB4Ju_dNjg0kyg/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -91,6 +90,37 @@ class Home extends Component {
 
               <h2>The Venue</h2>
               <p>Southport Island, Maine</p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div id="content2">
+        <div id="firstsec">
+          <div className="container center">
+            <div className="col-md-6">
+              <h2>The Venue</h2>
+              <p>Southport Island, Maine</p>
+              <form action="http://maps.google.com/maps" method="get" target="_blank">
+              Enter your starting address:
+              <input type="text" name="saddr" />
+              <input type="hidden" name="daddr" value="602 hendricks hill rd, southport island, ME" />
+              <input type="submit" value="get directions" />
+              </form>
+            </div>
+
+            <div id="map" className="col-md-6"></div>
+
+            <div className="col-md-4 hidden-xs center" id="location">
+          </div>
+        </div>
+      </div>
+      <div id="secsec">
+        <div className="container">
+
+
+
 
           </div>
         </div>

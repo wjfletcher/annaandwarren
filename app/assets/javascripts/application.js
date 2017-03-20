@@ -14,6 +14,15 @@
 //= require jquery_ujs
 //= require_tree .
 
+var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.820017, lng: -69.663975},
+          zoom: 12,
+          scrollwheel:false
+        });
+      }
+
 //smooth scrolling
 $(document).on('click', 'a', function(event){
     event.preventDefault();

@@ -12,8 +12,10 @@ body {
     background: rgba(0,0,0,0) !important;
 }
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-  background-color: white;
+@media only screen and (max-width : 768px) {
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    background-color: white;
+  }
 }
 
 .navbar-nav {
@@ -144,18 +146,18 @@ body {
 
 #firstsec {
     width: 100%;
-    height: auto;
+    height: 500px;
     background-color: #146666;
 }
 
 #secsec {
     background: image-url('/assets/cabin.jpg') 50% 0 no-repeat fixed;
-    height: 100vh;
+    height: 75vh;
     background-size: auto 100%;
     background-color: #6DABD2;
 }
 iframe {
-  max-width: 500px;
+  max-width: 900px;
 }
 .input-group {
     max-width: 300px;
@@ -174,7 +176,7 @@ iframe {
     background-color: white;
 }
 
-#map-canvas {
+#map {
     margin-top: 30px;
     margin-bottom: 30px;
     height: 400px;
