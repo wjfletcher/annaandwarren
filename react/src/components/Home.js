@@ -3,6 +3,36 @@ import React, { Component }  from 'react';
 class Home extends Component {
   constructor(props) {
     super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(e) {
+    debugger;
+    e.preventDefault();
+    let fetchBody = {
+      response: {
+        date: this.refs.date.value
+      }
+    };
+
+    fetch(`/api/v1/mailers`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'same-origin',
+      body: JSON.stringify(fetchBody) })
+      .then(response => {
+        if (response.ok) {
+          return response;
+        } else {
+          let errorMessage = `${response.status} (${response.statusText})`,
+          error = new Error(errorMessage);
+          throw(error);
+        }
+      })
+      .then(response => {
+        this.props.getExercises();
+      });
+
   }
 
 
@@ -67,9 +97,6 @@ class Home extends Component {
           <div className="container">
             <div className="col-md-4 hidden-xs center" id="location">
 
-                <h2>The Venue</h2>
-                <p>Southport Island, Maine</p>
-
             </div>
           </div>
         </div>
@@ -78,7 +105,18 @@ class Home extends Component {
         <div id="firstsec">
           <div className="container center">
             <div className="col-md-12">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8NHUe0vxBliSKU7znHt7AVQUVuRfYDodfmB4Ju_dNjg0kyg/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8NHUe0vxBliSKU7znHt7AVQUVuRfYDodfmB4Ju_dNjg0kyg/viewform?embedded=true" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+
+              <form onSubmit={this.handleSubmit} method="post" action="/response" >
+
+                <div className="row">
+                  <div className="field small-12 large-6 columns">
+                    <label htmlFor="workout_date" className="white-text">Date</label>
+                    <input type="date" name="workout[date]" id="workout_date" ref="date" required="required"/>
+                  </div>
+                </div>
+                <input className="button" type="submit" name="commit" value="Save" />
+              </form>
             </div>
           </div>
         </div>
@@ -87,10 +125,6 @@ class Home extends Component {
         <div className="container">
           <div id="map-canvas" className="col-md-6"></div>
           <div className="col-md-4 hidden-xs center" id="location">
-
-              <h2>The Venue</h2>
-              <p>Southport Island, Maine</p>
-
           </div>
         </div>
       </div>
