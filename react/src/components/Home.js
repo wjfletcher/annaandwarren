@@ -7,7 +7,6 @@ class Home extends Component {
   }
 
   handleSubmit(e) {
-    debugger;
     e.preventDefault();
     let fetchBody = {
       response: {

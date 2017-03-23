@@ -3,7 +3,6 @@ class Api::V1::MailersController < ApplicationController
 
   def create
     date = params[:response][:date]
-    binding.pry
     # subject=params[:subject]
     # user = params[:email]
     ResponseMailer.response_email(date).deliver
