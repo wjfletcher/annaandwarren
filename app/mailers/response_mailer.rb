@@ -1,6 +1,8 @@
 class ResponseMailer < ApplicationMailer
-  def response_email(date)
-    @body=date
-    mail(to: "annaandwarren@gmail.com", subject: "subject")
+  def response_email(name, beers, songs)
+    @name = name
+    @beers = beers
+    @songs = songs
+    mail(to: "annaandwarren@gmail.com", subject: "Beer and song requests")
   end
 end

@@ -10,7 +10,9 @@ class Home extends Component {
     e.preventDefault();
     let fetchBody = {
       response: {
-        date: this.refs.date.value
+        name: this.refs.name.value,
+        songs: this.refs.songs.value,
+        beers: this.refs.beers.value
       }
     };
 
@@ -104,18 +106,24 @@ class Home extends Component {
         <div id="firstsec">
           <div className="container center">
             <div className="col-md-12">
-              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd8NHUe0vxBliSKU7znHt7AVQUVuRfYDodfmB4Ju_dNjg0kyg/viewform?embedded=true" width="100%" height="300" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-
+            <h2>Beer and Song Requests</h2>
               <form onSubmit={this.handleSubmit} method="post" action="/response" >
-
-                <div className="row">
-                  <div className="field small-12 large-6 columns">
-                    <label htmlFor="workout_date" className="white-text">Date</label>
-                    <input type="date" name="workout[date]" id="workout_date" ref="date" required="required"/>
-                  </div>
+                <div className="input-group">
+                  <input type="text" name="name" placeholder="Name" className="form-control" id="name" ref="name" required="required"/>
                 </div>
+                <br />
+                <div className="input-group">
+                  <input type="text" name="songs" placeholder="Song requests" className="form-control" id="songs" ref="songs" />
+                </div>
+                <br />
+                <div className="input-group">
+                  <input type="text" name="beers" placeholder="Beer requests" className="form-control" id="beers" ref="beers" required="required"/>
+                </div>
+                <br />
                 <input className="button" type="submit" name="commit" value="Save" />
               </form>
+
+
             </div>
           </div>
         </div>
