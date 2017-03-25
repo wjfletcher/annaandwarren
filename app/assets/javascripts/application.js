@@ -15,13 +15,13 @@
 //= require_tree .
 
 var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 43.820017, lng: -69.663975},
-          zoom: 12,
-          scrollwheel:false
-        });
-      }
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 43.820017, lng: -69.663975},
+    zoom: 12,
+    scrollwheel:false
+  });
+}
 
 //smooth scrolling
 $(document).on('click', 'a', function(event){
@@ -32,28 +32,40 @@ $(document).on('click', 'a', function(event){
     }, 500);
 });
 
-//chevron animation function
-$(document).ready(function () {
-    $(".glyph").hover(
-        function () {
-            $(this).animate({
-                fontSize: "40px"
-            }, 200);
-        },
-        function () {
-            $(this).animate({
-                fontSize: "35px"
-            }, 200);
-        }
-    );
-
-    $(document).scroll(function() {
-        var yPos = -(parseInt(window.pageYOffset / 2));
-        console.log(yPos);
-        $(".jumbotron").css("background-position", "50%" + yPos + "px");
+//parallax background
+window.onload = function() {
+  $window = $(window);
+  if( $window.width() > 800){
+    $("div").each(function () {
+      assign(this);
     });
-});
 
+
+    function assign(el) {
+      if ($(el).hasClass("background")) {
+        document.addEventListener("scroll", function(){
+          var yPos = -(window.pageYOffset / 6);
+          if ($(el).hasClass("first")) {
+            yPos += 250;
+          } else if ($(el).hasClass("second")) {
+            yPos += 450;
+          } else if ($(el).hasClass("third")) {
+            yPos += 650;
+          }
+          el.style.backgroundPosition = "50%" + yPos + "px";
+        });
+      }
+    }
+
+    // $(document).ready(function () {
+    //     $(document).scroll(function() {
+    //         var yPos = -(parseInt(window.pageYOffset / 2));
+    //         console.log(yPos);
+    //         $(".jumbotron").css("background-position", "50%" + yPos + "px");
+    //     });
+    // });
+  }
+}
 //navbar transparent to filled on scroll
 var animatedScroll = false;
 

@@ -6,7 +6,7 @@ import Boothbay from './components/Boothbay';
 
 let routes = (
   <Route path="/" component={Home}>
-    <Route path="Boothbay" component={Boothbay} />
+    <Route path="boothbay" component={Boothbay} />
   </Route>
 );
 
