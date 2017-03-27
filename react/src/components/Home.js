@@ -88,12 +88,14 @@ class Home extends Component {
 
       <div id="content1">
         <div id="firstsec">
-          <div className="container center">
+          <div className="container center equal">
 
 
 
 
-              <div className="col-md-6">
+            <div className="col-md-6">
+              <div className="spacer"></div>
+              <div className="venue">
                 <h2>The Venue</h2>
                 <p>Southport Island, Maine</p>
                 <form action="http://maps.google.com/maps" method="get" target="_blank">
@@ -103,26 +105,25 @@ class Home extends Component {
                 <input type="submit" value="get directions" />
                 </form>
               </div>
+            </div>
 
-              <div id="map" className="col-md-6"></div>
-
-              <div className="col-md-4 hidden-xs center" id="location">
-              </div>
+            <div id="map" className="col-md-6"></div>
 
           </div>
         </div>
         <div className="background first">
           <div className="container">
-            <div className="col-md-4 hidden-xs center" id="location">
 
-            </div>
           </div>
         </div>
       </div>
       <div id="content2">
         <div id="firstsec">
           <div className="container center">
-            <div className="col-md-12">
+            <div className="col-md-6">
+              <img src="/assets/beermusic.jpg" className="img-responsive image"></img>
+            </div>
+            <div className="col-md-6">
             <h2>Beer and Song Requests</h2>
               <form onSubmit={this.handleSubmit} method="post" action="/response" >
                 <div className="input-group input-group-lg">
@@ -158,20 +159,9 @@ class Home extends Component {
         <div id="firstsec">
           <div className="container center">
 
-            <div className="col-md-6">
-              <h2>The Venue</h2>
-              <p>Southport Island, Maine</p>
-              <form action="http://maps.google.com/maps" method="get" target="_blank">
-              Enter your starting address:
-              <input type="text" name="saddr" />
-              <input type="hidden" name="daddr" value="602 hendricks hill rd, southport island, ME" />
-              <input type="submit" value="get directions" />
-              </form>
-            </div>
+        
 
-            <div id="map" className="col-md-6"></div>
-            <div className="col-md-4 hidden-xs center" id="location">
-          </div>
+
         </div>
       </div>
       <div className="background third">

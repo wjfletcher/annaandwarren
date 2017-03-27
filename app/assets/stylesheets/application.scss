@@ -59,6 +59,9 @@ body {
     .navbar {
         border-radius: 0px !important;
     }
+    .venue {
+      margin-top: 150px;
+    }
 }
 
 .jumbotron {
@@ -80,6 +83,11 @@ body {
 .jumbotron h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 500%;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive !important;
+  font-size: 400% !important;
 }
 
 .title {
@@ -104,35 +112,17 @@ body {
     -webkit-filter: blur(px);
 }
 
-.forestdiv {
-    background-color: #146666;
-}
-.forest {
-    height: 150px;
-    width: 100%;
-    position: relative;
-    top: -100px;
-
-}
-
-.spacer {
-    height: 10%;
-    width: 100%;
-}
-
 .spacerglyph {
     height: 25%;
     width: 100%;
 }
 
-.glyphicon-chevron-down {
-    font-size: 35px;
-    color: white;
-}
-/*.glyphicon-chevron-down:hover {
 
-    font-size: 35px;
-}*/
+
+.venue {
+  vertical-align: middle;
+  align-items: stretch;
+}
 
 #content1,
 #content2 {
@@ -146,8 +136,9 @@ body {
 
 #firstsec {
     width: 100%;
-    height: 500px;
+    min-height: 400px;
     background-color: #146666;
+    color:white;
 }
 
 .first {
@@ -183,8 +174,8 @@ iframe {
     margin-top: 5px;
 }
 
-#appstoreicon {
-    width: 120px;
+.image {
+  margin: 20px;
 }
 
 #content2 {
