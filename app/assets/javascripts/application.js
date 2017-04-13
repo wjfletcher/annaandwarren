@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require_tree .
 
+
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -34,6 +35,10 @@ $(document).on('click', 'a', function(event){
 
 //parallax background
 window.onload = function() {
+
+  document.getElementById('vid').play();
+
+
   $window = $(window);
   if( $window.width() > 800){
     $("div").each(function () {
@@ -70,13 +75,13 @@ window.onload = function() {
 var animatedScroll = false;
 
 $(document).scroll(function () {
-    if($(window).scrollTop() > 10 && !animatedScroll){
+    if($(window).scrollTop() > 100 && !animatedScroll){
 
       animatedScroll = true;
 
       $(".topbar").stop().animate({opacity: "1"}, 100);
     }
-    else if ($(window).scrollTop() < 10 && animatedScroll){
+    else if ($(window).scrollTop() < 100 && animatedScroll){
 
       animatedScroll = false;
 

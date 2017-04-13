@@ -26,6 +26,7 @@ body {
     height: 50px;
     width: 100%;
     z-index: 100;
+    opacity: 0;
     background-color: #146666;
     position: fixed;
 }
@@ -65,21 +66,19 @@ body {
 }
 
 .jumbotron {
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.35),
-      rgba(0, 0, 0, 0.35)
-    ),
-      url(/assets/colorado.JPG) 50% 0 no-repeat fixed;
-    color: white !important;
+
+    color: rgb(255, 255, 200) !important;
     background-color: transparent !important;
     width: 100%;
     height: 100vh;
-    //margin-top: -52px;
     margin-bottom: 0 !important;
     display: flex;
     align-items: center;
 }
 
+#aw {
+  font-size:700%;
+}
 .jumbotron h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 500%;
@@ -90,11 +89,25 @@ h2 {
   font-size: 400% !important;
 }
 
+video#vid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-filter: blur(px);
+}
+
 .title {
-    border:5px double;
+    border-top:5px double;
+    border-bottom:5px double;
     border-radius: 10px;
+    background-color: rgba(20,102,102, 0.75);
     padding: 50px;
-    max-width: 600px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     vertical-align: middle;

@@ -3,6 +3,9 @@ import React, { Component }  from 'react';
 class Home extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      confirm: ""
+    };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -31,7 +34,9 @@ class Home extends Component {
         }
       })
       .then(response => {
-        this.props.getExercises();
+        this.setState({
+          confirm: "Your requests were submitted!"
+        });
       });
 
   }
@@ -78,10 +83,15 @@ class Home extends Component {
 
       <div className="jumbotron center background" id="jumbotron">
           <div className="title">
-            <h1>Anna and Warren</h1>
+            <h1 id="aw">Anna and Warren</h1>
             <p>are getting married!</p>
             <h1>September 16th, 2017</h1>
           </div>
+          <video autoplay muted loop id="vid">
+              <source src="/assets/testvid.mp4" type="video/mp4" />
+          </video>
+
+
 
       </div>
 
@@ -125,6 +135,7 @@ class Home extends Component {
             </div>
             <div className="col-md-6">
             <h2>Beer and Song Requests</h2>
+              <h3>{this.state.confirm}</h3>
               <form onSubmit={this.handleSubmit} method="post" action="/response" >
                 <div className="input-group input-group-lg">
                   <input type="text" name="name" placeholder="Name" className="form-control" id="name" ref="name" required="required"/>
@@ -159,7 +170,7 @@ class Home extends Component {
         <div id="firstsec">
           <div className="container center">
 
-        
+
 
 
         </div>
