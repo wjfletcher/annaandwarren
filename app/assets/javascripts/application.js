@@ -29,7 +29,7 @@ $(document).on('click', 'a', function(event){
     event.preventDefault();
 
     $('html, body').animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top
+        scrollTop: $( $.attr(this, 'href') ).offset().top - 40
     }, 500);
 });
 
@@ -61,14 +61,6 @@ window.onload = function() {
         });
       }
     }
-
-    // $(document).ready(function () {
-    //     $(document).scroll(function() {
-    //         var yPos = -(parseInt(window.pageYOffset / 2));
-    //         console.log(yPos);
-    //         $(".jumbotron").css("background-position", "50%" + yPos + "px");
-    //     });
-    // });
   }
 }
 //navbar transparent to filled on scroll

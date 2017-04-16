@@ -69,9 +69,11 @@ class Home extends Component {
                   <ul className="nav navbar-nav navbar-left">
                       <li><a href="#jumbotron">Home</a>
                       </li>
-                      <li><a href="#content1">RSVP</a>
+                      <li><a href="#content1">Venue</a>
                       </li>
                       <li><a href="#content2">Song/Beer Requests</a>
+                      </li>
+                      <li><a href="#content3">Where to Stay</a>
                       </li>
 
                   </ul>
@@ -83,9 +85,11 @@ class Home extends Component {
 
       <div className="jumbotron center background" id="jumbotron">
           <div className="title">
-            <h1 id="aw">Anna and Warren</h1>
-            <p>are getting married!</p>
-            <h1>September 16th, 2017</h1>
+            <div className="overlay">
+              <h1 id="aw">Anna and Warren</h1>
+              <p>are getting married!</p>
+              <h1>September 16th, 2017</h1>
+            </div>
           </div>
           <video autoplay muted loop id="vid">
               <source src="/assets/testvid.mp4" type="video/mp4" />
@@ -102,17 +106,19 @@ class Home extends Component {
 
 
 
-
+            <h2>The Venue</h2>
             <div className="col-md-6">
-              <div className="spacer"></div>
+
               <div className="venue">
-                <h2>The Venue</h2>
-                <p>Southport Island, Maine</p>
+
+                <h3>Southport Island, Maine</h3>
+                <p>After looking around at more traditional venues, we realized they were all too restrictive and... well, traditional. We decided the best way to have the reception we wanted was to use the Cartier Cabin up on Southport Island in Maine! It was still being built at the time, but we knew it would be the perfect place to get married.</p>
+                <h4>Directions</h4>
                 <form action="http://maps.google.com/maps" method="get" target="_blank">
-                Enter your starting address:
-                <input type="text" name="saddr" />
+                <input type="text" name="saddr" placeholder="starting address" />
                 <input type="hidden" name="daddr" value="602 hendricks hill rd, southport island, ME" />
-                <input type="submit" value="get directions" />
+                <br/><br/>
+                <input type="submit" className="btn btn-default" value="get directions" />
                 </form>
               </div>
             </div>
@@ -149,7 +155,7 @@ class Home extends Component {
                   <input type="text" name="beers" placeholder="Beer requests" className="form-control" id="beers" ref="beers" required="required"/>
                 </div>
                 <br />
-                <input className="button" type="submit" name="commit" value="Save" />
+                <input className="btn btn-default" type="submit" name="commit" value="Save" />
               </form>
 
 
@@ -166,9 +172,24 @@ class Home extends Component {
       </div>
 
 
-      <div id="content2">
+      <div id="content3">
         <div id="firstsec">
           <div className="container center">
+            <h2>Places to stay</h2>
+            <div className="row">
+              <div className="col-md-4">
+              <h3>Ocean Gate Resort</h3>
+              <p>asdflkajsdf</p>
+              </div>
+              <div className="col-md-4">
+              <h3>Ship Ahoy Motel</h3>
+              <p>asdlfkjasdf</p>
+              </div>
+              <div className="col-md-4">
+              <h3>Newagen Seaside Inn</h3>
+              <p>asdlfkjasdf</p>
+              </div>
+            </div>
 
 
 
