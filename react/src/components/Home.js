@@ -136,11 +136,13 @@ class Home extends Component {
       <div id="content2">
         <div id="firstsec">
           <div className="container center">
+          <h2>Beer and Song Requests</h2>
             <div className="col-md-6">
               <img src="/assets/beermusic.jpg" className="img-responsive image"></img>
             </div>
+
             <div className="col-md-6">
-            <h2>Beer and Song Requests</h2>
+              <br />
               <h3>{this.state.confirm}</h3>
               <form onSubmit={this.handleSubmit} method="post" action="/response" >
                 <div className="input-group input-group-lg">
