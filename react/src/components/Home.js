@@ -67,13 +67,13 @@ class Home extends Component {
           </div>
           <div className="collapse navbar-collapse">
             <ul className="nav navbar-nav navbar-left">
-                <li><a href="#jumbotron">Home</a>
+                <li><a href="#jumbotron" className="smooth">Home</a>
                 </li>
-                <li><a href="#content1">Venue</a>
+                <li><a href="#content1" className="smooth">Venue</a>
                 </li>
-                <li><a href="#content2">Song/Beer Requests</a>
+                <li><a href="#content2" className="smooth">Song/Beer Requests</a>
                 </li>
-                <li><a href="#content3">Where to Stay</a>
+                <li><a href="#content3" className="smooth">Where to Stay</a>
                 </li>
 
             </ul>

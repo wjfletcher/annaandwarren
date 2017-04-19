@@ -21,6 +21,10 @@ body {
   .navbar-inverse .navbar-nav li a:hover {
     color: black !important;
   }
+
+  .navbar-inverse .navbar-nav li a {
+    color: #9d9d9d !important;
+  }
 }
 
 .navbar-nav {
@@ -96,16 +100,20 @@ body {
 }
 
 #aw {
-  font-size:700%;
+  font-size:600%;
 }
 .jumbotron h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 500%;
+    font-size: 400%;
 }
 
 h2 {
   font-family: 'Dancing Script', cursive !important;
   font-size: 400% !important;
+}
+
+p {
+  font-size: 125%;
 }
 
 video#vid {

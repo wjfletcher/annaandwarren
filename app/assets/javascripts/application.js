@@ -25,7 +25,7 @@ function initMap() {
 }
 
 //smooth scrolling
-$(document).on('click', 'a', function(event){
+$(document).on('click', 'a.smooth', function(event){
     event.preventDefault();
 
     $('html, body').animate({
