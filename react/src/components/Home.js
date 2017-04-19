@@ -48,38 +48,38 @@ class Home extends Component {
       <div>
       <div className="topbar"></div>
       <div className="navbar navbar-inverse navbar-fixed-top navhidden">
-          <div className="container">
-              <div className="navbar-header">
+        <div className="container">
+          <div className="navbar-header">
 
 
 
-                  <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 
 
-                      <span className="sr-only">Toggle navigation</span>
+              <span className="sr-only">Toggle navigation</span>
 
 
-                      <span className="icon-bar"></span>
-                      <span className="icon-bar"></span>
-                      <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
 
-                  </button>
-              </div>
-              <div className="collapse navbar-collapse">
-                  <ul className="nav navbar-nav navbar-left">
-                      <li><a href="#jumbotron">Home</a>
-                      </li>
-                      <li><a href="#content1">Venue</a>
-                      </li>
-                      <li><a href="#content2">Song/Beer Requests</a>
-                      </li>
-                      <li><a href="#content3">Where to Stay</a>
-                      </li>
-
-                  </ul>
-
-              </div>
+            </button>
           </div>
+          <div className="collapse navbar-collapse">
+            <ul className="nav navbar-nav navbar-left">
+                <li><a href="#jumbotron">Home</a>
+                </li>
+                <li><a href="#content1">Venue</a>
+                </li>
+                <li><a href="#content2">Song/Beer Requests</a>
+                </li>
+                <li><a href="#content3">Where to Stay</a>
+                </li>
+
+            </ul>
+
+          </div>
+        </div>
 
       </div>
 
@@ -94,23 +94,21 @@ class Home extends Component {
           <video autoplay muted loop id="vid">
               <source src="/assets/testvid.mp4" type="video/mp4" />
           </video>
+      </div>
 
-
-
+      <div className="background fourth">
+        <div className="container">
+        </div>
       </div>
 
 
       <div id="content1">
+        <div className="overlay">
         <div id="firstsec">
           <div className="container center equal">
-
-
-
             <h2>The Venue</h2>
             <div className="col-md-6">
-
               <div className="venue">
-
                 <h3>Southport Island, Maine</h3>
                 <p>After looking around at more traditional venues, we realized they were all too restrictive and... well, traditional. We decided the best way to have the reception we wanted was to use the Cartier Cabin up on Southport Island in Maine! It was still being built at the time, but we knew it would be the perfect place to get married.</p>
                 <h4>Directions</h4>
@@ -122,21 +120,24 @@ class Home extends Component {
                 </form>
               </div>
             </div>
-
             <div id="map" className="col-md-6"></div>
-
           </div>
         </div>
-        <div className="background first">
-          <div className="container">
-
-          </div>
         </div>
       </div>
+
+      <div className="background first">
+        <div className="container">
+
+        </div>
+      </div>
+
+
       <div id="content2">
+        <div className="overlay">
         <div id="firstsec">
           <div className="container center">
-          <h2>Beer and Song Requests</h2>
+            <h2>Beer and Song Requests</h2>
             <div className="col-md-6">
               <img src="/assets/beermusic.jpg" className="img-responsive image"></img>
             </div>
@@ -159,12 +160,12 @@ class Home extends Component {
                 <br />
                 <input className="btn btn-default" type="submit" name="commit" value="Save" />
               </form>
-
-
             </div>
           </div>
         </div>
+        </div>
       </div>
+
       <div className="background second">
         <div className="container">
           <div id="map-canvas" className="col-md-6"></div>
@@ -175,40 +176,59 @@ class Home extends Component {
 
 
       <div id="content3">
+      <div className="overlay">
         <div id="firstsec">
           <div className="container center">
             <h2>Places to stay</h2>
             <div className="row">
+              <h3>On The Island</h3>
               <div className="col-md-4">
-              <h3>Ocean Gate Resort</h3>
-              <p>asdflkajsdf</p>
+                <h3>Ship Ahoy Motel</h3>
+                <p>Cheap as shit and clean: $39-$59 per night</p>
+                <p><a href="http://www.shipahoymotel.com/rates.html">website</a></p>
               </div>
               <div className="col-md-4">
-              <h3>Ship Ahoy Motel</h3>
-              <p>asdlfkjasdf</p>
+                <h3>Ocean Gate Resort</h3>
+                <p>Pricey compared to Ship Ahoy, however nice resort with lots of amenities and where we are staying for the weekend: $119-$169 per night</p>
+                <p><a href="http://www.oceangateinn.com/ogrCalendar/ogr_reservations.html?_ga=1.156248062.436664161.1492382771">website</a></p>
               </div>
               <div className="col-md-4">
-              <h3>Newagen Seaside Inn</h3>
-              <p>asdlfkjasdf</p>
+                <h3>Gray's Homestead Campground</h3>
+                <p>for the folks who like to rough it, a campground right smack dab on the ocean: $48-$53 cash only...</p>
+                <p><a href="http://www.graysoceancamping.com/rates.htm">website</a></p>
               </div>
             </div>
-
-
-
-
-        </div>
-      </div>
-      <div className="background third">
-        <div className="container">
-
-
-
-
+            <hr />
+            <div className="row">
+              <h3>In Boothbay Harbor</h3>
+              <div className="col-md-4">
+                <h3>Flagship Inn</h3>
+                <p>Pet friendly, so friendly to the point that the dog gets a goodie bag and the humans don't... $119-$134 per night</p>
+                <p><a href="http://www.boothbaylodging.com/rooms.htm">website</a></p>
+              </div>
+              <div className="col-md-4">
+                <h3>Boothbay Harbor Oceanside Golf Resort</h3>
+                <p>previously known as Rocktide Inn. However, not really sure where the golfing is... But beautiful rooms for good rates: $119-$209 per night</p>
+                <p><a href="https://boothbayharboroceansideresort.com/boothbay-harbor-accommodations/">website</a></p>
+              </div>
+              <div className="col-md-4">
+                <h3>Midtown Motel</h3>
+                <p>from the 1950s and has not changed, yet prices are low and they're nice people. Also walking distance to downtown: $69-$89 per night (call to make reservations: 207-633-2751)</p>
+                <p><a href="http://www.midtownmaine.com/">website</a></p>
+              </div>
+            </div>
           </div>
         </div>
+        </div>
       </div>
 
+      <div className="background third">
+        <div className="container">
+        </div>
       </div>
+
+
+    </div>
 
 
     )

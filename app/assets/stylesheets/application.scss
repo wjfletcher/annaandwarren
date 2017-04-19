@@ -10,6 +10,7 @@ body {
 .navbar {
     border: none !important;
     background: rgba(0,0,0,0) !important;
+    font-size: 20px;
 }
 
 @media only screen and (max-width : 768px) {
@@ -40,7 +41,7 @@ body {
     width: 100%;
     z-index: 100;
     opacity: 0;
-    background-color: #146666;
+    background-color: #CFCCC5;
     position: fixed;
 }
 
@@ -83,6 +84,10 @@ body {
 
     color: white !important;
     background-color: transparent !important;
+    background: linear-gradient(
+      rgba(135, 178, 63, 0.75),
+      rgba(135, 178, 63, 0.75)
+    );
     width: 100%;
     height: 100vh;
     margin-bottom: 0 !important;
@@ -119,7 +124,7 @@ video#vid {
     border-top:5px double;
     border-bottom:5px double;
 
-    background-color: rgba(20,102,102, 0.75);
+    background-color: rgba(173,172,167, 0.75);
     padding: 50px 0px 50px 0px;
     width: 100%;
     height: auto;
@@ -131,16 +136,13 @@ video#vid {
     opacity: 0.80;
     border-top:5px double;
     border-bottom:5px double;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.75),
-      rgba(0, 0, 0, 0.75)
-    ),
-    url('/assets/grainybrown.jpg');
-    padding: 50px;
+    background-color: rgba(138, 132, 96, 0.75);
+    padding: 50px 0px;
     width: 100%;
     height: auto;
     margin: 0 auto;
     vertical-align: middle;
+
 }
 
 #jumbobg {
@@ -168,72 +170,79 @@ video#vid {
 }
 
 #content1,
-#content2 {
-    height: auto;
-    background-color: #146666;
+#content2,
+#content3 {
+  height: auto;
+  background-color: #146666;
+
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 #firstsec {
-    width: 100%;
-    min-height: 400px;
-    background-color: #146666;
-    color:white;
+  width: 100%;
+  min-height: 400px;
+  background-color: #CFCCC5;
+  color:white;
+  padding: 20px;
+
 }
 
 .first {
-    background: image-url('/assets/cabin.jpg') 50% 0 no-repeat fixed;
-    height: 75vh;
-    background-size: auto 100%;
-    background-color: #6DABD2;
+  background: image-url('/assets/cabin.jpg') 50% 0 no-repeat fixed;
+  height: 75vh;
+  background-size: cover;
+  background-color: #6DABD2;
 }
 
 .second {
-    background: image-url('/assets/usandmyla.jpg') 50% 0 no-repeat fixed;
-    height: 75vh;
-    background-size: auto 100%;
-    background-color: #6DABD2;
+  background: image-url('/assets/usandmyla.jpg') 50% 0 no-repeat fixed;
+  height: 75vh;
+  background-size: cover;
+  background-color: #6DABD2;
 }
 
 .third {
-    background: image-url('/assets/roadisland.jpg') 50% 0 no-repeat fixed;
-    height: 75vh;
-    background-size: auto 100%;
-    background-color: #6DABD2;
+  background: image-url('/assets/roadisland.jpg') 50% 0 no-repeat fixed;
+  height: 75vh;
+  background-size: cover;
+  background-color: #6DABD2;
+}
+
+.fourth {
+  background: image-url('/assets/silly.JPG') 50% 0 no-repeat fixed;
+  height: 75vh;
+  background-size: cover;
+  background-color: #6DABD2;
 }
 
 iframe {
   max-width: 900px;
 }
 .input-group {
-    max-width: 300px;
-    margin: auto;
+  max-width: 300px;
+  margin: auto;
 }
 
 #submit {
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .image {
   margin: 20px;
 }
 
-#content2 {
-    background-color: white;
-}
-
 #map {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    height: 400px;
-    align-content: center;
-    border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 400px;
+  align-content: center;
+  border-radius: 5px;
 }
 
 #location {
-    padding: 110px;
-    margin: 30px;
+  padding: 110px;
+  margin: 30px;
 }

@@ -51,11 +51,13 @@ window.onload = function() {
         document.addEventListener("scroll", function(){
           var yPos = -(window.pageYOffset / 6);
           if ($(el).hasClass("first")) {
-            yPos += 250;
+            yPos += 400;
           } else if ($(el).hasClass("second")) {
-            yPos += 450;
+            yPos += 600;
           } else if ($(el).hasClass("third")) {
-            yPos += 650;
+            yPos += 850;
+          } else if ($(el).hasClass("fourth")) {
+            yPos += 200;
           }
           el.style.backgroundPosition = "50%" + yPos + "px";
         });
