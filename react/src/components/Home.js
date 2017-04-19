@@ -103,7 +103,7 @@ class Home extends Component {
 
 
       <div id="content1">
-        <div className="overlay">
+        <div className="content">
         <div id="firstsec">
           <div className="container center equal">
             <h2>The Venue</h2>
@@ -134,7 +134,7 @@ class Home extends Component {
 
 
       <div id="content2">
-        <div className="overlay">
+        <div className="content">
         <div id="firstsec">
           <div className="container center">
             <h2>Beer and Song Requests</h2>
@@ -176,7 +176,7 @@ class Home extends Component {
 
 
       <div id="content3">
-      <div className="overlay">
+      <div className="content">
         <div id="firstsec">
           <div className="container center">
             <h2>Places to stay</h2>
