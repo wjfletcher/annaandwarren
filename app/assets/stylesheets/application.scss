@@ -163,7 +163,7 @@ video#vid {
       0px 1px 10px 0px black,
       0px -1px 10px 0px black;
     position: relative;
-    z-index: 100;
+
 }
 
 #jumbobg {
@@ -211,40 +211,53 @@ video#vid {
 
 }
 
+
+  .paraimages {
+    height: 75vh;
+    background-size: cover !important;
+    background-color: #6DABD2;
+  }
+
+
+
+
 .first {
+  @extend .paraimages;
   background: image-url('/assets/cabin.jpg') 50% 0 no-repeat fixed;
-  height: 75vh;
-  background-size: cover;
-  background-color: #6DABD2;
 }
 
 .second {
+  @extend .paraimages;
   background: image-url('/assets/usandmyla.jpg') 50% 0 no-repeat fixed;
-  height: 75vh;
-  background-size: cover;
-  background-color: #6DABD2;
 }
 
 .third {
+  @extend .paraimages;
   background: image-url('/assets/roadisland.jpg') 50% 0 no-repeat fixed;
-  height: 75vh;
-  background-size: cover;
-  background-color: #6DABD2;
 }
 
 .fourth {
+  @extend .paraimages;
   background: image-url('/assets/silly.JPG') 50% 0 no-repeat fixed;
-  height: 75vh;
-  background-size: cover;
-  background-color: #6DABD2;
 }
 
 iframe {
   max-width: 900px;
 }
+
 .input-group {
-  max-width: 300px;
+  width: 230px;
   margin: auto;
+}
+
+.col-md-6 .inline-input {
+  padding: 0px;
+}
+
+@media only screen and (min-width : 992px) {
+  .beer {
+    margin-top: 45px;
+  }
 }
 
 #submit {

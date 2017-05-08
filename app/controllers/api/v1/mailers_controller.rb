@@ -4,9 +4,10 @@ class Api::V1::MailersController < ApplicationController
   def create
     name = params[:response][:name]
     beers = params[:response][:beers]
-    songs = params[:response][:songs]
+    songname = params[:response][:songname]
+    songartist = params[:response][:songartist]
     # subject=params[:subject]
     # user = params[:email]
-    ResponseMailer.response_email(name, beers, songs).deliver
+    ResponseMailer.response_email(name, beers, songname, songartist).deliver
   end
 end

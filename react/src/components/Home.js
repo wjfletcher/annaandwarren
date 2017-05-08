@@ -14,7 +14,8 @@ class Home extends Component {
     let fetchBody = {
       response: {
         name: this.refs.name.value,
-        songs: this.refs.songs.value,
+        songname: this.refs.songname.value,
+        songartist: this.refs.songartist.value,
         beers: this.refs.beers.value
       }
     };
@@ -35,8 +36,9 @@ class Home extends Component {
       })
       .then(response => {
         this.setState({
-          confirm: "Your requests were submitted!"
+          confirm: "Your requests were submitted. Edit the form to submit another!"
         });
+        setTimeout(function() { this.setState({confirm: ""}); }.bind(this), 3000);
       });
 
   }
@@ -150,12 +152,20 @@ class Home extends Component {
                   <input type="text" name="name" placeholder="Name" className="form-control" id="name" ref="name" required="required"/>
                 </div>
                 <br />
-                <div className="input-group input-group-lg">
-                  <input type="text" name="songs" placeholder="Song requests" className="form-control" id="songs" ref="songs" />
+
+                <div className="inline-input col-md-6">
+                  <div className="input-group input-group-lg">
+                  <input type="text" name="songname" placeholder="Song Name" className="form-control" id="songname" ref="songname" />
+                  </div>
+                </div>
+                <div className="inline-input col-md-6">
+                  <div className="input-group input-group-lg">
+                  <input type="text" name="songartist" placeholder="Song Artist" className="form-control" id="songartist" ref="songartist" />
+                  </div>
                 </div>
                 <br />
-                <div className="input-group input-group-lg">
-                  <input type="text" name="beers" placeholder="Beer requests" className="form-control" id="beers" ref="beers" required="required"/>
+                <div className="beer input-group input-group-lg">
+                  <input type="text" name="beers" placeholder="Beer request" className="form-control" id="beers" ref="beers" required="required"/>
                 </div>
                 <br />
                 <input className="btn btn-default" type="submit" name="commit" value="Save" />

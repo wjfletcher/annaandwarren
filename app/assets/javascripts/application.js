@@ -34,37 +34,7 @@ $(document).on('click', 'a.smooth', function(event){
 });
 
 //parallax background
-window.onload = function() {
 
-  document.getElementById('vid').play();
-
-
-  $window = $(window);
-  if( $window.width() > 800){
-    $("div").each(function () {
-      assign(this);
-    });
-
-
-    function assign(el) {
-      if ($(el).hasClass("background")) {
-        document.addEventListener("scroll", function(){
-          var yPos = -(window.pageYOffset / 6);
-          if ($(el).hasClass("first")) {
-            yPos += 400;
-          } else if ($(el).hasClass("second")) {
-            yPos += 600;
-          } else if ($(el).hasClass("third")) {
-            yPos += 850;
-          } else if ($(el).hasClass("fourth")) {
-            yPos += 200;
-          }
-          el.style.backgroundPosition = "50%" + yPos + "px";
-        });
-      }
-    }
-  }
-}
 //navbar transparent to filled on scroll
 var animatedScroll = false;
 
