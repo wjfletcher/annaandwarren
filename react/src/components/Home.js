@@ -100,7 +100,7 @@ class Home extends Component {
           </div>
           <video autoplay muted loop id="vid">
               <source src="/assets/testvid.mp4" type="video/mp4" />
-              <img src="/assets/silly.JPG" title="Your browser does not support the <video> tag" />
+              <img src="/assets/silly.jpg" title="Your browser does not support the <video> tag" />
           </video>
       </div>
 
