@@ -11,36 +11,41 @@ class Home extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    let fetchBody = {
-      response: {
-        name: this.refs.name.value,
-        songname: this.refs.songname.value,
-        songartist: this.refs.songartist.value,
-        beers: this.refs.beers.value
-      }
-    };
-
-    fetch(`/api/v1/mailers`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      credentials: 'same-origin',
-      body: JSON.stringify(fetchBody) })
-      .then(response => {
-        if (response.ok) {
-          return response;
-        } else {
-          let errorMessage = `${response.status} (${response.statusText})`,
-          error = new Error(errorMessage);
-          throw(error);
-        }
-      })
-      .then(response => {
-        this.setState({
-          confirm: "Your requests were submitted. Edit the form to submit another!"
-        });
-        setTimeout(function() { this.setState({confirm: ""}); }.bind(this), 3000);
+    if (this.refs.songname.value === "" && this.refs.beers.value === "") {
+      this.setState({
+        confirm: "You must request either a song or a beer!"
       });
+    } else {
+      let fetchBody = {
+        response: {
+          name: this.refs.name.value,
+          songname: this.refs.songname.value,
+          songartist: this.refs.songartist.value,
+          beers: this.refs.beers.value
+        }
+      };
 
+      fetch(`/api/v1/mailers`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        credentials: 'same-origin',
+        body: JSON.stringify(fetchBody) })
+        .then(response => {
+          if (response.ok) {
+            return response;
+          } else {
+            let errorMessage = `${response.status} (${response.statusText})`,
+            error = new Error(errorMessage);
+            throw(error);
+          }
+        })
+        .then(response => {
+          this.setState({
+            confirm: "Your requests were submitted. Edit the form to submit another!"
+          });
+          setTimeout(function() { this.setState({confirm: ""}); }.bind(this), 4000);
+        });
+    }
   }
 
 
@@ -95,6 +100,7 @@ class Home extends Component {
           </div>
           <video autoplay muted loop id="vid">
               <source src="/assets/testvid.mp4" type="video/mp4" />
+              <img src="/assets/silly.JPG" title="Your browser does not support the <video> tag" />
           </video>
       </div>
 
@@ -147,7 +153,7 @@ class Home extends Component {
             <div className="col-md-6">
               <br />
               <h3>{this.state.confirm}</h3>
-              <form onSubmit={this.handleSubmit} method="post" action="/response" >
+              <form onSubmit={this.handleSubmit} name="requestForm" method="post" action="/response" >
                 <div className="input-group input-group-lg">
                   <input type="text" name="name" placeholder="Name" className="form-control" id="name" ref="name" required="required"/>
                 </div>
@@ -165,7 +171,7 @@ class Home extends Component {
                 </div>
                 <br />
                 <div className="beer input-group input-group-lg">
-                  <input type="text" name="beers" placeholder="Beer request" className="form-control" id="beers" ref="beers" required="required"/>
+                  <input type="text" name="beers" placeholder="Beer request" className="form-control" id="beers" ref="beers" />
                 </div>
                 <br />
                 <input className="btn btn-default" type="submit" name="commit" value="Save" />
