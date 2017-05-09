@@ -216,8 +216,12 @@ video#vid {
     background-color: #6DABD2;
   }
 
-
-
+  @media only screen and (max-width : 768px) {
+    .paraimages {
+      background-size: auto 100%;
+      background-color: #6DABD2;
+    }
+  }
 
 .first {
   @extend .paraimages;
