@@ -121,7 +121,7 @@ class Home extends Component {
                 <p>After looking around at more traditional venues, we realized they were all too restrictive and... well, traditional. We decided the best way to have the reception we wanted was to use the Cartier Cabin up on Southport Island in Maine! It was still being built at the time, but we knew it would be the perfect place to get married.</p>
                 <h4>Directions</h4>
                 <form action="http://maps.google.com/maps" method="get" target="_blank">
-                <input type="text" name="saddr" placeholder="starting address" />
+                <input type="text" name="saddr" id="saddr" placeholder="starting address" />
                 <input type="hidden" name="daddr" value="602 hendricks hill rd, southport island, ME" />
                 <br/><br/>
                 <input type="submit" className="btn btn-default" value="get directions" />
