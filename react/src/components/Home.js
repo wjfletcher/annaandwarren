@@ -115,7 +115,7 @@ class Home extends Component {
             <div className="col-md-6">
               <div className="venue">
                 <h3>Southport Island, Maine</h3>
-                <h3>After looking around at more traditional venues, we realized they were all too restrictive and... well, traditional. We decided the best way to have the reception we wanted was to use the Cartier Cabin up on Southport Island in Maine! It was still being built at the time, but we knew it would be the perfect place to get married.</h3>
+                <h3>After looking around at more traditional venues, we realized they were all too restrictive and... well, traditional. We decided the best way to have the reception we wanted was to use the Cartier Cabin up on Southport Island in Maine! It was still being built at the time, but we knew it would be the perfect place to get married. No formal sit-down dinner where you're forced to only socialize with the strangers at your table. Think backyard party with a wedding theme!</h3>
                 <h3>Directions</h3>
                 <form action="http://maps.google.com/maps" method="get" target="_blank">
                 <input type="text" name="saddr" id="saddr" placeholder="starting address" />
@@ -215,18 +215,18 @@ class Home extends Component {
               <h3>On The Island</h3>
               <div className="col-md-4">
                 <h3>Ship Ahoy Motel</h3>
-                <p>Cheap as shit and clean: $39-$59 per night</p>
-                <p><a href="http://www.shipahoymotel.com/rates.html" target="_blank">website</a></p>
+                <h3>Cheap as shit and clean: $39-$59 per night</h3>
+                <h3><a href="http://www.shipahoymotel.com/rates.html" target="_blank">website</a></h3>
               </div>
               <div className="col-md-4">
                 <h3>Ocean Gate Resort</h3>
-                <p>Pricey compared to Ship Ahoy, however nice resort with lots of amenities and where we are staying for the weekend: $119-$169 per night</p>
-                <p><a href="http://www.oceangateinn.com/ogrCalendar/ogr_reservations.html?_ga=1.156248062.436664161.1492382771" target="_blank">website</a></p>
+                <h3>Pricey compared to Ship Ahoy, however nice resort with lots of amenities and where we are staying for the weekend: $119-$169 per night</h3>
+                <h3><a href="http://www.oceangateinn.com/ogrCalendar/ogr_reservations.html?_ga=1.156248062.436664161.1492382771" target="_blank">website</a></h3>
               </div>
               <div className="col-md-4">
                 <h3>Gray's Homestead Campground</h3>
-                <p>for the folks who like to rough it, a campground right smack dab on the ocean: $48-$53 cash only...</p>
-                <p><a href="http://www.graysoceancamping.com/rates.htm" target="_blank">website</a></p>
+                <h3>for the folks who like to rough it, a campground right smack dab on the ocean: $48-$53 cash only...</h3>
+                <h3><a href="http://www.graysoceancamping.com/rates.htm" target="_blank">website</a></h3>
               </div>
             </div>
             <hr />
@@ -234,18 +234,18 @@ class Home extends Component {
               <h3>In Boothbay Harbor</h3>
               <div className="col-md-4">
                 <h3>Flagship Inn</h3>
-                <p>Pet friendly, so friendly to the point that the dog gets a goodie bag and the humans don't... $119-$134 per night</p>
-                <p><a href="http://www.boothbaylodging.com/rooms.htm" target="_blank">website</a></p>
+                <h3>Pet friendly, so friendly to the point that the dog gets a goodie bag and the humans don't... $119-$134 per night</h3>
+                <h3><a href="http://www.boothbaylodging.com/rooms.htm" target="_blank">website</a></h3>
               </div>
               <div className="col-md-4">
                 <h3>Boothbay Harbor Oceanside Golf Resort</h3>
-                <p>Previously known as Rocktide Inn. However, not really sure where the golfing is... But beautiful rooms for good rates: $119-$209 per night</p>
-                <p><a href="https://boothbayharboroceansideresort.com/boothbay-harbor-reservations/" target="_blank">website</a></p>
+                <h3>Previously known as Rocktide Inn. However, not really sure where the golfing is... But beautiful rooms for good rates: $119-$209 per night</h3>
+                <h3><a href="https://boothbayharboroceansideresort.com/boothbay-harbor-reservations/" target="_blank">website</a></h3>
               </div>
               <div className="col-md-4">
                 <h3>Midtown Motel</h3>
-                <p>from the 1950s and has not changed, yet prices are low and they're nice people. Also walking distance to downtown: $69-$89 per night (call to make reservations: 207-633-2751)</p>
-                <p><a href="http://www.midtownmaine.com/" target="_blank">website</a></p>
+                <h3>from the 1950s and has not changed, yet prices are low and they're nice people. Also walking distance to downtown: $69-$89 per night (call to make reservations: 207-633-2751)</h3>
+                <h3><a href="http://www.midtownmaine.com/" target="_blank">website</a></h3>
               </div>
             </div>
           </div>
