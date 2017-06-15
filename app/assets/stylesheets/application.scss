@@ -36,18 +36,14 @@ body {
   }
 }
 
-.navbar-nav {
-  margin: 0px -15px !important;
-}
-
 @media only screen and (min-width : 768px) {
   .navbar-inverse .navbar-nav li a {
     color: white !important;
   }
 
   .jumbotron h1 {
-      font-family: 'Dancing Script', cursive;
-      font-size: 400%;
+    font-family: 'Dancing Script', cursive;
+    font-size: 400%;
   }
 
   #aw {
@@ -58,6 +54,11 @@ body {
     color: grey !important;
   }
 }
+
+.navbar-nav {
+  margin: 0px -15px !important;
+}
+
 .topbar {
     height: 50px;
     width: 100%;
@@ -98,7 +99,7 @@ body {
         border-radius: 0px !important;
     }
     .venue {
-      margin-top: 50px;
+      margin-top: 30px;
     }
 }
 
@@ -106,7 +107,8 @@ body {
 
     color: white !important;
     background-color: transparent !important;
-    background: linear-gradient(
+    background: url("/assets/trees.png") no-repeat left bottom,
+      linear-gradient(
       rgba(135, 178, 63, 0.75),
       rgba(135, 178, 63, 0.75)
     );
@@ -123,6 +125,7 @@ body {
 h2 {
   font-family: 'Dancing Script', cursive !important;
   font-size: 400% !important;
+  text-shadow: 2px 2px #054C30;
 }
 
 p {
@@ -150,31 +153,15 @@ video#vid {
 }
 
 .title {
-    border-top:5px double;
-    border-bottom:5px double;
-
-    background-color: rgba(173,172,167, 0.75);
-    padding: 50px 0px 50px 0px;
     width: 100%;
-    height: auto;
     margin: 0 auto;
-    vertical-align: middle;
+    vertical-align: top;
+    text-shadow: 2px 2px #054C30;
+    margin-top: -200px;
 }
 
-.overlay {
-    opacity: 0.80;
-    border-top:5px double;
-    border-bottom:5px double;
-    background-color: rgba(138, 132, 96, 0.75);
-    padding: 50px 0px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    vertical-align: middle;
-}
 
 .content {
-    background-color: rgba(138, 132, 96, 0.75);
     padding: 30px 0px;
     width: 100%;
     margin: 0 auto;
@@ -211,9 +198,10 @@ video#vid {
 
 #content1,
 #content2,
-#content3 {
+#content3,
+#content4 {
   height: auto;
-  background-color: #146666;
+  background-color: #054C30;
 
 }
 
@@ -224,7 +212,7 @@ video#vid {
 #firstsec {
   width: 100%;
   min-height: 400px;
-  background-color: #CFCCC5;
+  background-color: #A5C56F;
   color:white;
   padding: 20px;
 
@@ -267,6 +255,12 @@ video#vid {
 .fourth {
   @extend .paraimages;
   background: image-url('/assets/ringpop.jpg') 50% 0 no-repeat;
+  height: 75vh;
+}
+
+.fifth {
+  @extend .paraimages;
+  background: image-url('/assets/silly.jpg') 50% 0 no-repeat;
   height: 75vh;
 }
 

@@ -78,6 +78,8 @@ class Home extends Component {
                 </li>
                 <li><a href="#content1" className="smooth">Venue</a>
                 </li>
+                <li><a href="#content4" className="smooth">Zola Registry</a>
+                </li>
                 <li><a href="#content2" className="smooth">Song/Beer Requests</a>
                 </li>
                 <li><a href="#content3" className="smooth">Where to Stay</a>
@@ -98,12 +100,7 @@ class Home extends Component {
               <h1>September 16th, 2017</h1>
             </div>
           </div>
-          <video autoplay muted loop id="vid">
-              <source src="/assets/testvid.mp4" type="video/mp4" />
-              <img src="/assets/silly.jpg" title="Your browser does not support the <video> tag" />
-          </video>
       </div>
-
       <div className="background fourth">
         <div className="container">
         </div>
@@ -118,8 +115,8 @@ class Home extends Component {
             <div className="col-md-6">
               <div className="venue">
                 <h3>Southport Island, Maine</h3>
-                <p>After looking around at more traditional venues, we realized they were all too restrictive and... well, traditional. We decided the best way to have the reception we wanted was to use the Cartier Cabin up on Southport Island in Maine! It was still being built at the time, but we knew it would be the perfect place to get married.</p>
-                <h4>Directions</h4>
+                <h3>After looking around at more traditional venues, we realized they were all too restrictive and... well, traditional. We decided the best way to have the reception we wanted was to use the Cartier Cabin up on Southport Island in Maine! It was still being built at the time, but we knew it would be the perfect place to get married.</h3>
+                <h3>Directions</h3>
                 <form action="http://maps.google.com/maps" method="get" target="_blank">
                 <input type="text" name="saddr" id="saddr" placeholder="starting address" />
                 <input type="hidden" name="daddr" value="602 hendricks hill rd, southport island, ME" />
@@ -140,6 +137,24 @@ class Home extends Component {
         </div>
       </div>
 
+      <div id="content4">
+        <div className="content">
+        <div id="firstsec">
+          <div className="container center equal">
+            <h2>Zola Registry</h2>
+            <h3>As a couple who has been together for six and a half years, we have everything we need, actually more than we need! Because of that, we request that you contribute to our Zola instead of physical gifts. Zola is a site that can be used for a more traditional gift registry, but it also has the option allowing you to contribute to experiences on our honeymoon! Any contribution would be greatly appreciated, though your presence at our reception is all we really care about. So follow the link below if you'd like to pitch in!</h3><br />
+            <h3><a href="https://www.zola.com/registry/annaandwarren" target="_blank">Zola</a></h3>
+
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div className="background fifth">
+        <div className="container">
+
+        </div>
+      </div>
 
       <div id="content2">
         <div className="content">
@@ -201,17 +216,17 @@ class Home extends Component {
               <div className="col-md-4">
                 <h3>Ship Ahoy Motel</h3>
                 <p>Cheap as shit and clean: $39-$59 per night</p>
-                <p><a href="http://www.shipahoymotel.com/rates.html">website</a></p>
+                <p><a href="http://www.shipahoymotel.com/rates.html" target="_blank">website</a></p>
               </div>
               <div className="col-md-4">
                 <h3>Ocean Gate Resort</h3>
                 <p>Pricey compared to Ship Ahoy, however nice resort with lots of amenities and where we are staying for the weekend: $119-$169 per night</p>
-                <p><a href="http://www.oceangateinn.com/ogrCalendar/ogr_reservations.html?_ga=1.156248062.436664161.1492382771">website</a></p>
+                <p><a href="http://www.oceangateinn.com/ogrCalendar/ogr_reservations.html?_ga=1.156248062.436664161.1492382771" target="_blank">website</a></p>
               </div>
               <div className="col-md-4">
                 <h3>Gray's Homestead Campground</h3>
                 <p>for the folks who like to rough it, a campground right smack dab on the ocean: $48-$53 cash only...</p>
-                <p><a href="http://www.graysoceancamping.com/rates.htm">website</a></p>
+                <p><a href="http://www.graysoceancamping.com/rates.htm" target="_blank">website</a></p>
               </div>
             </div>
             <hr />
@@ -220,17 +235,17 @@ class Home extends Component {
               <div className="col-md-4">
                 <h3>Flagship Inn</h3>
                 <p>Pet friendly, so friendly to the point that the dog gets a goodie bag and the humans don't... $119-$134 per night</p>
-                <p><a href="http://www.boothbaylodging.com/rooms.htm">website</a></p>
+                <p><a href="http://www.boothbaylodging.com/rooms.htm" target="_blank">website</a></p>
               </div>
               <div className="col-md-4">
                 <h3>Boothbay Harbor Oceanside Golf Resort</h3>
-                <p>previously known as Rocktide Inn. However, not really sure where the golfing is... But beautiful rooms for good rates: $119-$209 per night</p>
-                <p><a href="https://boothbayharboroceansideresort.com/boothbay-harbor-accommodations/">website</a></p>
+                <p>Previously known as Rocktide Inn. However, not really sure where the golfing is... But beautiful rooms for good rates: $119-$209 per night</p>
+                <p><a href="https://boothbayharboroceansideresort.com/boothbay-harbor-reservations/" target="_blank">website</a></p>
               </div>
               <div className="col-md-4">
                 <h3>Midtown Motel</h3>
                 <p>from the 1950s and has not changed, yet prices are low and they're nice people. Also walking distance to downtown: $69-$89 per night (call to make reservations: 207-633-2751)</p>
-                <p><a href="http://www.midtownmaine.com/">website</a></p>
+                <p><a href="http://www.midtownmaine.com/" target="_blank">website</a></p>
               </div>
             </div>
           </div>
