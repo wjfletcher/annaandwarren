@@ -33,21 +33,6 @@ $(document).on('click', 'a.smooth', function(event){
     }, 500);
 });
 
-//video background
-window.onload = function() {
-  document.getElementById('vid').play();
-
-  function validateAndSend() {
-      if (requestForm.beers.value === '' && requestForm.songname.value === '') {
-        alert('You have to enter at least one phone number.');
-        return false;
-      }
-      else {
-        requestForm.submit();
-      }
-  }
-};
-
 //navbar transparent to filled on scroll
 var animatedScroll = false;
 
