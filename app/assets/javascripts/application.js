@@ -34,20 +34,20 @@ $(document).on('click', 'a.smooth', function(event){
 });
 
 //navbar transparent to filled on scroll
-var animatedScroll = false;
-
-$(document).scroll(function () {
-    if($(window).scrollTop() > 100 && !animatedScroll){
-
-      animatedScroll = true;
-
-      $(".topbar").stop().animate({opacity: "1"}, 100);
-    }
-    else if ($(window).scrollTop() < 100 && animatedScroll){
-
-      animatedScroll = false;
-
-      $(".topbar").stop().animate({opacity: "0"}, 400);
-    }
-
-});
+// var animatedScroll = false;
+//
+// $(document).scroll(function () {
+//     if($(window).scrollTop() > 100 && !animatedScroll){
+//
+//       animatedScroll = true;
+//
+//       $(".topbar").stop().animate({opacity: "1"}, 100);
+//     }
+//     else if ($(window).scrollTop() < 100 && animatedScroll){
+//
+//       animatedScroll = false;
+//
+//       $(".topbar").stop().animate({opacity: "0"}, 400);
+//     }
+//
+// });
