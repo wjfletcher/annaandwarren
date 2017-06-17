@@ -219,89 +219,50 @@ video#vid {
 }
 
   @media only screen and (min-width : 768px) {
-    .first {
+    .paraimages {
       background-size: cover !important;
       background-color: #6DABD2;
       background-attachment: fixed !important;
-      background: image-url('/assets/cabin.jpg') 50% 0 no-repeat;
-      height: 75vh;
-    }
-
-    .second {
-      background-size: cover !important;
-      background-color: #6DABD2;
-      background-attachment: fixed !important;
-      background: image-url('/assets/usandmyla.jpg') 50% 0 no-repeat;
-      height: 75vh;
-    }
-
-    .third {
-      background-size: cover !important;
-      background-color: #6DABD2;
-      background-attachment: fixed !important;
-      background: image-url('/assets/candykiss.jpg') 50% 0 no-repeat;
-      height: 100vh;
-    }
-
-    .fourth {
-      background-size: cover !important;
-      background-color: #6DABD2;
-      background-attachment: fixed !important;
-      background: image-url('/assets/ringpop.jpg') 50% 0 no-repeat;
-      height: 75vh;
-    }
-
-    .fifth {
-      background-size: cover !important;
-      background-color: #6DABD2;
-      background-attachment: fixed !important;
-      background: image-url('/assets/silly.jpg') 50% 0 no-repeat;
-      height: 75vh;
     }
   }
 
   @media only screen and (max-width : 768px) {
-
-    .first {
+    .paraimages {
       background-size: cover !important;
       background-color: #6DABD2;
       background-attachment: scroll !important;
-      background: image-url('/assets/images-mobile/cabin.jpg') 50% 0 no-repeat;
-      height: 75vh;
-    }
-
-    .second {
-      background-size: cover !important;
-      background-color: #6DABD2;
-      background-attachment: scroll !important;
-      background: image-url('/assets/images-mobile/usandmyla.jpg') 50% 0 no-repeat;
-      height: 75vh;
-    }
-
-    .third {
-      background-size: cover !important;
-      background-color: #6DABD2;
-      background-attachment: scroll !important;
-      background: image-url('/assets/images-mobile/candykiss.jpg') 50% 0 no-repeat;
-      height: 100vh;
-    }
-
-    .fourth {
-      background-size: cover !important;
-      background-color: #6DABD2;
-      background-attachment: scroll !important;
-      background: image-url('/assets/images-mobile/ringpop.jpg') 50% 0 no-repeat;
-      height: 75vh;
-    }
-
-    .fifth {
-      background-size: cover !important;
-      background-color: #6DABD2;
-      background-attachment: scroll !important;
-      background: image-url('/assets/images-mobile/silly.jpg') 50% 0 no-repeat;
-      height: 75vh;
     }
   }
+
+.first {
+  @extend .paraimages;
+  background: image-url('/assets/cabin.jpg') 50% 0 no-repeat;
+  height: 75vh;
+}
+
+.second {
+  @extend .paraimages;
+  background: image-url('/assets/usandmyla.jpg') 50% 0 no-repeat;
+  height: 75vh;
+}
+
+.third {
+  @extend .paraimages;
+  background: image-url('/assets/candykiss.jpg') 50% 0 no-repeat;
+  height: 100vh;
+}
+
+.fourth {
+  @extend .paraimages;
+  background: image-url('/assets/ringpop.jpg') 50% 0 no-repeat;
+  height: 75vh;
+}
+
+.fifth {
+  @extend .paraimages;
+  background: image-url('/assets/silly.jpg') 50% 0 no-repeat;
+  height: 75vh;
+}
 
 iframe {
   max-width: 900px;
