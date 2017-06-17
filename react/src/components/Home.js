@@ -50,6 +50,10 @@ class Home extends Component {
 
 
   render() {
+    let today = new Date()
+    let weddingDay = new Date("09/16/2017")
+    let timeDiff = Math.abs(weddingDay.getTime() - today.getTime());
+    let diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
 
     return(
       <div>
@@ -98,6 +102,7 @@ class Home extends Component {
               <h1 id="aw">Anna and Warren</h1>
               <p>are getting married!</p>
               <h1>September 16th, 2017</h1>
+              <p>(in {diffDays} days!)</p>
             </div>
           </div>
       </div>
