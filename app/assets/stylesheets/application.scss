@@ -13,7 +13,7 @@ body {
     font-size: 20px;
 }
 
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
   .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     background-color: white;
   }
@@ -218,7 +218,7 @@ video#vid {
 
 }
 
-  @media only screen and (min-width : 768px) {
+  @media only screen and (min-width : 1024px) {
     .paraimages {
       background-size: cover !important;
       background-color: #6DABD2;
@@ -226,7 +226,7 @@ video#vid {
     }
   }
 
-  @media only screen and (max-width : 768px) {
+  @media only screen and (max-width : 1024px) {
     .paraimages {
       background-size: cover !important;
       background-color: #6DABD2;
@@ -275,12 +275,6 @@ iframe {
 
 .col-md-6 .inline-input {
   padding: 0px;
-}
-
-@media only screen and (min-width : 992px) {
-  .beer {
-    margin-top: 45px;
-  }
 }
 
 #submit {

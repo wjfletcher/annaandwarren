@@ -167,7 +167,10 @@ class Home extends Component {
           <div className="container center">
             <h2>Beer and Song Requests</h2>
             <div className="col-md-6">
-              <img src="/assets/beermusic.jpg" className="img-responsive image"></img>
+              
+              <h3>We are going to have a selection of beer, and also some red and white wine. If you have any beer requests, please fill out the form. We can't guarantee that all requested beers will be available, but we'll do our best!</h3>
+
+              <h3>Music is going to be handled by a DJ by the name of Spotify. You can request songs using the form too, but we have the right to refuse any request, especially songs by the likes of Bieber or Swift!</h3>
             </div>
 
             <div className="col-md-6">
@@ -189,11 +192,12 @@ class Home extends Component {
                   <input type="text" name="songartist" placeholder="Song Artist" className="form-control" id="songartist" ref="songartist" />
                   </div>
                 </div>
-                <br />
+
+                <h3>and/or</h3>
                 <div className="beer input-group input-group-lg">
                   <input type="text" name="beers" placeholder="Beer request" className="form-control" id="beers" ref="beers" />
                 </div>
-                <br />
+                <br/>
                 <input className="btn btn-default" type="submit" name="commit" value="Save" />
               </form>
             </div>
