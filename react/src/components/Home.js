@@ -11,6 +11,9 @@ class Home extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
+    this.setState({
+      confirm: <i className='fa fa-spinner fa-pulse fa-3x fa-fw'></i>
+    });
     if (this.refs.songname.value === "" && this.refs.beers.value === "") {
       this.setState({
         confirm: "You must request either a song or a beer!"
@@ -43,7 +46,7 @@ class Home extends Component {
           this.setState({
             confirm: "Your requests were submitted. Edit the form to submit another!"
           });
-          setTimeout(function() { this.setState({confirm: ""}); }.bind(this), 4000);
+          setTimeout(function() { this.setState({confirm: ""}); }.bind(this), 6000);
         });
     }
   }
@@ -167,7 +170,7 @@ class Home extends Component {
           <div className="container center">
             <h2>Beer and Song Requests</h2>
             <div className="col-md-6">
-              
+
               <h3>We are going to have a selection of beer, and also some red and white wine. If you have any beer requests, please fill out the form. We can't guarantee that all requested beers will be available, but we'll do our best!</h3>
 
               <h3>Music is going to be handled by a DJ by the name of Spotify. You can request songs using the form too, but we have the right to refuse any request, especially songs by the likes of Bieber or Swift!</h3>
