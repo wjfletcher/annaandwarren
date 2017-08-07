@@ -1,4 +1,6 @@
 import React, { Component }  from 'react';
+require('es6-promise').polyfill();
+require('isomorphic-fetch');
 
 class Home extends Component {
   constructor(props) {
